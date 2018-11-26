@@ -15,7 +15,6 @@ public class Server {
             LocateRegistry.createRegistry(1099);
 
             // 把远程对象注册到RMI注册服务器上，并命名为service02
-            //绑定的URL标准格式为：rmi://host:port/name(其中协议名可以省略，下面两种写法都是正确的）
             Naming.bind("rmi://localhost:1099/service02", service02);
         } catch (Exception e) {
             e.printStackTrace();
