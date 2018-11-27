@@ -15,12 +15,11 @@ public class ServiceImpl extends UnicastRemoteObject implements IService {
     private String name;
 
     public ServiceImpl(String name) throws RemoteException {
-        super();
         this.name = name;
     }
 
     public String doService(String content) throws RemoteException {
-        return "server >> " + content;
+        return "server >> " + name + " : " + content;
     }
 }
 
