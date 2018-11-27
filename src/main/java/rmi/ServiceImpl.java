@@ -26,42 +26,42 @@ public class ServiceImpl extends UnicastRemoteObject implements IService {
 
 /**
  * rmic -keep ServiceImpl->ServiceImpl_Stub.java
-public final class ServiceImpl_Stub
-        extends java.rmi.server.RemoteStub
-        implements IService, java.rmi.Remote {
-    private static final long serialVersionUID = 2;
-
-    private static java.lang.reflect.Method $method_doService_0;
-
-    static {
-        try {
-            $method_doService_0 = IService.class.getMethod("doService", new java.lang.Class[]{java.lang.String.class});
-        } catch (java.lang.NoSuchMethodException e) {
-            throw new java.lang.NoSuchMethodError(
-                    "stub class initialization failed");
-        }
-    }
-
-    // constructors
-    public ServiceImpl_Stub(java.rmi.server.RemoteRef ref) {
-        super(ref);
-    }
-
-    // methods from remote interfaces
-
-    // implementation of doService(String)
-    public java.lang.String doService(java.lang.String $param_String_1)
-            throws java.rmi.RemoteException {
-        try {
-            Object $result = ref.invoke(this, $method_doService_0, new java.lang.Object[]{$param_String_1}, -6150940093166659157L);
-            return ((java.lang.String) $result);
-        } catch (java.lang.RuntimeException e) {
-            throw e;
-        } catch (java.rmi.RemoteException e) {
-            throw e;
-        } catch (java.lang.Exception e) {
-            throw new java.rmi.UnexpectedException("undeclared checked exception", e);
-        }
-    }
-}
+ * public final class ServiceImpl_Stub
+ *         extends java.rmi.server.RemoteStub
+ *         implements IService, java.rmi.Remote {
+ *     private static final long serialVersionUID = 2;
+ *
+ *     private static java.lang.reflect.Method $method_doService_0;
+ *
+ *     static {
+ *         try {
+ *             $method_doService_0 = IService.class.getMethod("doService", new java.lang.Class[]{java.lang.String.class});
+ *         } catch (java.lang.NoSuchMethodException e) {
+ *             throw new java.lang.NoSuchMethodError(
+ *                     "stub class initialization failed");
+ *         }
+ *     }
+ *
+ *     // constructors
+ *     public ServiceImpl_Stub(java.rmi.server.RemoteRef ref) {
+ *         super(ref);
+ *     }
+ *
+ *     // methods from remote interfaces
+ *
+ *     // implementation of doService(String)
+ *     public java.lang.String doService(java.lang.String $param_String_1)
+ *             throws java.rmi.RemoteException {
+ *         try {
+ *             Object $result = ref.invoke(this, $method_doService_0, new java.lang.Object[]{$param_String_1}, -6150940093166659157L);
+ *             return ((java.lang.String) $result);
+ *         } catch (java.lang.RuntimeException e) {
+ *             throw e;
+ *         } catch (java.rmi.RemoteException e) {
+ *             throw e;
+ *         } catch (java.lang.Exception e) {
+ *             throw new java.rmi.UnexpectedException("undeclared checked exception", e);
+ *         }
+ *     }
+ * }
  */
