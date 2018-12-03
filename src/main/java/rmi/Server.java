@@ -9,7 +9,7 @@ public class Server {
             // 实例化实现了IService接口的远程服务ServiceImpl对象
             IService service02 = new ServiceImpl("service02");
 
-            // 本地主机上的远程对象注册表Registry的实例，并指定端口为8888，
+            // 本地主机上的远程对象注册表Registry的实例，并指定端口为1099，
             // 这一步必不可少（Java默认端口是1099），必不可缺的一步，缺少注册表创建，
             // 则无法绑定对象到远程注册表上
             LocateRegistry.createRegistry(1099);
